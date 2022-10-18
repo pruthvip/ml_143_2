@@ -1,0 +1,156 @@
+@font-face {
+    font-family: cheri;
+    src: url(CHERI___.TTF);
+}
+
+html {
+    font-family: cheri;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: #fec1b2;
+    height: 100vh;
+    padding: 10rem 10rem;
+}
+
+.question {
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    color: #7b000b;
+}
+
+.no-button {
+    position: absolute;
+    transition: all 300ms;
+    z-index: 10;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.response {
+    opacity: 0;
+    transition: all 1s;
+    margin-top: 10rem;
+}
+
+.response--show {
+    opacity: 1;
+}
+
+/* CSS */
+.button {
+  background-color: #cf245f;
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3rem; /* 18px */
+  font-weight: 300;
+  line-height: 1.75rem; /* 28px */
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-76:hover {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .button-76 {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
+}
+  
+  #heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      animation: heartbeat 1s infinite;
+      margin:0 auto
+  }
+  #heart:before,
+  #heart:after {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #fff;
+      -moz-border-radius: 50px 50px 0 0;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      -webkit-transform-origin: 0 100%;
+         -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+           -o-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+  }
+  #heart:after {
+      left: 0;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transform-origin: 100% 100%;
+         -moz-transform-origin: 100% 100%;
+          -ms-transform-origin: 100% 100%;
+           -o-transform-origin: 100% 100%;
+              transform-origin :100% 100%;
+  }
+  
+  
+  
+  @keyframes heartbeat
+  {
+    0%
+    {
+      transform: scale( .75 );
+    }
+    20%
+    {
+      transform: scale( 1 );
+    }
+    40%
+    {
+      transform: scale( .75 );
+    }
+    60%
+    {
+      transform: scale( 1 );
+    }
+    80%
+    {
+      transform: scale( .75 );
+    }
+    100%
+    {
+      transform: scale( .75 );
+    }
+  }
