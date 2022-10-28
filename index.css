@@ -3,9 +3,24 @@
     src: url(CHERI___.TTF);
 }
 
+/** reset rules **/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
 html {
     font-family: cheri;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 body {
@@ -19,8 +34,7 @@ body {
 
 main {
     background-color: #fec1b2;
-    height: 100vh;
-    padding: 10rem 10rem;
+    padding: 10rem;
 }
 
 .question {
@@ -28,6 +42,7 @@ main {
     display: flex;
     justify-content: center;
     color: #7b000b;
+    text-align: center;
 }
 
 .no-button {
@@ -52,6 +67,7 @@ main {
 
 /* CSS */
 .button {
+  width: 312px;
   background-color: #cf245f;
   border: 0;
   border-radius: .25rem;
@@ -152,5 +168,29 @@ main {
     100%
     {
       transform: scale( .75 );
+    }
+  }
+
+
+  /* media queries */
+
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 10px;
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    main {
+      padding: 10rem 5rem;
+    }
+
+    .button {
+      width: 280px;
+      margin-bottom: 2rem;
     }
   }
